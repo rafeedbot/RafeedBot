@@ -788,9 +788,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         R1 = await query.message.reply_text("⍟⍟⍟")
+        await asyncio.sleep(0.5)
         R2 = await R1.edit("✪⍟⍟")
+        await asyncio.sleep(0.5)
         R3 = await R2.edit("✪✪⍟")
+        await asyncio.sleep(0.5)
         R4 = await R3.edit("✪✪✪")
+        await asyncio.sleep(0.5)
+        await R4.delete()
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
