@@ -481,20 +481,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         protect_content=True if ident == "filep" else False 
                     )
                     msg1 = await query.message.reply(
-                    f'<b>Hey 👋{query.from_user.mention}\n'
-                    f'<b>📫 Yᴏuʀ Fɪʟᴇ ɪꜱ Rᴇᴀᴅʏ 👇\n\n'
-                    f'<b>↬ ғɪʟᴇ ɴᴀᴍᴇ: </b>{title}\n'
-                    f'<b>↬ sɪᴢᴇ:</b> {size}\n\n'
-                    '𝘛𝘩𝘪𝘴 𝘍𝘪𝘭𝘦 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘋𝘦𝘭𝘦𝘵𝘦𝘥 𝘪𝘯 5 𝘔𝘪𝘯𝘶𝘵𝘦𝘴.!\nതാഴെ ഉള്ള click to download അമർത്തി പിന്നീട് വരുന്ന\nചാനലിൽ നിന്ന് file saved മെസ്സേജിലേക്ക് മാറ്റി download ചെയ്യുക \n⚠️ copyright കാരണം മൂവി 5mint ൽ delet ആകും ⚠️!',
+                    f'<b>{query.from_user.mention} Your File Is Ready ✨\n'
+                    f'<b>↬ 📟 Name: </b>{title}\n'
+                    f'<b>↬ 🎗 Size:</b> {size}\n\n'
+                    '⚡️Click The Below Button For Files.⚡️!\n',
                     True,
                     'html',
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📥 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐭𝐡𝐞 𝐅𝐢𝐥𝐞 📥", url = ms.link)
+                                InlineKeyboardButton("⌫ Cʟɪᴄᴋ Hᴇʀᴇ Fᴏʀ Fɪʟᴇ", url = ms.link)
                             ],
                             [
-                                InlineKeyboardButton("⚠️ 𝐂𝐚𝐧'𝐭 𝐕𝐢𝐞𝐰 𝐓𝐡𝐞 𝐅𝐢𝐥𝐞 ❓ 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 ⚠️", url = f"{CH_LINK}")
+                                InlineKeyboardButton("⌫ Cʟɪᴄᴋ Hᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ғɪʟᴇs ᴜᴘʟᴏᴀᴅᴇ ᴄʜᴀɴɴᴇʟ", url = f"{CH_LINK}")
                             ]
                         ]
                     )
