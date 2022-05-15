@@ -1218,6 +1218,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "carb":
+        await query.reply_photo(
+            photo="https://telegra.ph/file/d82ec3eaf0f85073f78a0.jpg",
+            caption=script.CARB_TXT,
+            parse_mode='html'
+        )
     elif query.data == "deploy":
         buttons = [[
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
