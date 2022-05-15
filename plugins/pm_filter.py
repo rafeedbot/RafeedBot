@@ -1221,10 +1221,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "carb":
-        await query.reply_photo(
-            photo="https://telegra.ph/file/d82ec3eaf0f85073f78a0.jpg",
-            caption=script.CARB_TXT,
-            parse_mode='html'
+        R2 = await query.reply_text("1")
+        R1 = await R2.reply_photo(
+                 photo="https://telegra.ph/file/d82ec3eaf0f85073f78a0.jpg",
+                 caption=script.CARB_TXT,
+                 parse_mode='html'
         )
     elif query.data == "deploy":
         buttons = [[
