@@ -27,10 +27,10 @@ async def index_files(bot, query):
         return
 
     if lock.locked():
-        return await query.answer('Wait until previous process complete.', show_alert=True)
+        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃 𝙰𝙽𝙾𝚃𝙷𝙴𝚁 𝙿𝚁𝙾𝙲𝙴𝚂𝚂 𝙸𝚂 𝚁𝚄𝙽𝙽𝙸𝙽𝙶 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃 𝚄𝙽𝚃𝙸𝙻 𝙸𝚃 𝙴𝙽𝙳𝚂', show_alert=True)
     msg = query.message
 
-    await query.answer('Processing...⏳', show_alert=True)
+    await query.answer('<b>𝙸𝙽𝙹𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝙳𝙱💉</b>', show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
                                f'Your Submission for indexing {chat} has been accepted by our moderators and will be added soon.',
