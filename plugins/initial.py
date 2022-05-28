@@ -4,18 +4,18 @@ from pyrogram.types import Message
 
 from alita import LOGGER
 from alita.bot_class import Alita
-from alita.database.approve_db import Approve
-from alita.database.blacklist_db import Blacklist
-from alita.database.chats_db import Chats
-from alita.database.disable_db import Disabling
-from alita.database.filters_db import Filters
-from alita.database.greetings_db import Greetings
-from alita.database.lang_db import Langs
-from alita.database.notes_db import Notes, NotesSettings
-from alita.database.pins_db import Pins
-from alita.database.reporting_db import Reporting
-from alita.database.rules_db import Rules
-from alita.database.users_db import Users
+from database.approve_db import Approve
+from database.blacklist_db import Blacklist
+from database.chats_db import Chats
+from database.disable_db import Disabling
+from database.filters_db import Filters
+from database.greetings_db import Greetings
+from database.lang_db import Langs
+from database.notes_db import Notes, NotesSettings
+from database.pins_db import Pins
+from database.reporting_db import Reporting
+from database.rules_db import Rules
+from database.users_db import Users
 
 
 @Alita.on_message(filters.group, group=4)
