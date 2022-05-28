@@ -16,15 +16,15 @@ from pyrogram.errors import (
 from pyrogram.types import Message
 from speedtest import Speedtest
 
-from alita import LOGFILE, LOGGER, MESSAGE_DUMP, UPTIME
-from alita.bot_class import Alita
+from Alita import LOGFILE, LOGGER, MESSAGE_DUMP, UPTIME
+from Alita.bot_class import Alita
 from database.chats_db import Chats
-from alita.tr_engine import tlang
-from alita.utils.clean_file import remove_markdown_and_html
-from alita.utils.custom_filters import command
-from alita.utils.http_helper import HTTPx
-from alita.utils.parser import mention_markdown
-from alita.vars import Config
+from Alita.tr_engine import tlang
+from Alita.utils.clean_file import remove_markdown_and_html
+from Alita.utils.custom_filters import command
+from Alita.utils.http_helper import HTTPx
+from Alita.utils.parser import mention_markdown
+from Alita.vars import Config
 
 
 @Alita.on_message(command("ping", sudo_cmd=True))
