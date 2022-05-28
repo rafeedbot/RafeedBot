@@ -3,10 +3,10 @@ from traceback import format_exc
 from pyrogram.errors import PeerIdInvalid, RPCError
 from pyrogram.types import Message
 
-from alita import LOGGER
-from alita.bot_class import Alita
+from Alita import LOGGER
+from Alita.bot_class import Alita
 from database.group_blacklist import GroupBlacklist
-from alita.utils.custom_filters import command
+from Alita.utils.custom_filters import command
 
 # initialise database
 db = GroupBlacklist()
