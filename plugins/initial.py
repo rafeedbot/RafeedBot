@@ -2,8 +2,8 @@ from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import Message
 
-from alita import LOGGER
-from alita.bot_class import Alita
+from Alita import LOGGER
+from Alita.bot_class import Alita
 from database.approve_db import Approve
 from database.blacklist_db import Blacklist
 from database.chats_db import Chats
