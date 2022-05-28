@@ -43,7 +43,7 @@ try:
     if environ.get("ENV"):
         from alita.vars import Config
     else:
-        from alita.vars import Development as Config
+        from Alita.vars import Development as Config
 except Exception as ef:
     LOGGER.error(ef)  # Print Error
     LOGGER.error(format_exc())
