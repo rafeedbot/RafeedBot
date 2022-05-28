@@ -3,12 +3,12 @@ from html import escape
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, Message
 
-from alita import LOGGER
-from alita.bot_class import Alita
+from Alita import LOGGER
+from Alita.bot_class import Alita
 from database.blacklist_db import Blacklist
-from alita.tr_engine import tlang
-from alita.utils.custom_filters import command, owner_filter, restrict_filter
-from alita.utils.kbhelpers import ikb
+from Alita.tr_engine import tlang
+from Alita.utils.custom_filters import command, owner_filter, restrict_filter
+from Alita.utils.kbhelpers import ikb
 
 
 @Alita.on_message(command("blacklist") & filters.group)
