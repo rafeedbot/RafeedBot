@@ -3,7 +3,7 @@ from threading import RLock
 from time import time
 
 from database import MongoDB
-from alita.utils.msg_types import Types
+from Alita.utils.msg_types import Types
 
 INSERTION_LOCK = RLock()
 
