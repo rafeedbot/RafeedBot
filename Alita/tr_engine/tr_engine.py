@@ -1,4 +1,5 @@
 from functools import reduce
+from functools import reduce
 from glob import glob
 from operator import getitem
 from os import path
@@ -6,11 +7,9 @@ from threading import RLock
 from traceback import format_exc
 
 from pyrogram.types import CallbackQuery
-from yaml import FullLoader
-from yaml import load as load_yml
 
-from alita import ENABLED_LOCALES, LOGGER
-from alita.database.lang_db import Langs
+from Alita import ENABLED_LOCALES, LOGGER
+from database.lang_db import Langs
 
 # Initialise
 LANG_LOCK = RLock()
