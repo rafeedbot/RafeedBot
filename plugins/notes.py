@@ -7,7 +7,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, Message
 
 from alita import LOGGER
 from alita.bot_class import Alita
-from alita.database.notes_db import Notes, NotesSettings
+from database.notes_db import Notes, NotesSettings
 from alita.utils.cmd_senders import send_cmd
 from alita.utils.custom_filters import admin_filter, command, owner_filter
 from alita.utils.kbhelpers import ikb
