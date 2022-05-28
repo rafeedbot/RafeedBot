@@ -51,3 +51,4 @@ Pillow
 ujson
 aiohttp
 speedtest
+prettyconf
