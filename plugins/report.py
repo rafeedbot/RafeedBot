@@ -6,7 +6,7 @@ from pyrogram.types import CallbackQuery, Message
 
 from alita import LOGGER, SUPPORT_STAFF
 from alita.bot_class import Alita
-from alita.database.reporting_db import Reporting
+from database.reporting_db import Reporting
 from alita.utils.custom_filters import admin_filter, command
 from alita.utils.kbhelpers import ikb
 from alita.utils.parser import mention_html
