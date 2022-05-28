@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 from alita import LOGGER
 from alita.bot_class import Alita
-from alita.database.group_blacklist import GroupBlacklist
+from database.group_blacklist import GroupBlacklist
 from alita.utils.custom_filters import command
 
 # initialise database
