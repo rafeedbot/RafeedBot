@@ -5,7 +5,7 @@ from pyrogram.types import CallbackQuery, Message
 
 from alita import LOGGER
 from alita.bot_class import Alita
-from alita.database.blacklist_db import Blacklist
+from database.blacklist_db import Blacklist
 from alita.tr_engine import tlang
 from alita.utils.custom_filters import command, owner_filter, restrict_filter
 from alita.utils.kbhelpers import ikb
