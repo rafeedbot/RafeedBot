@@ -3,7 +3,7 @@ from sys import exit as exiter
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 
-from Alita.vars import DB_NAME, DB_URI
+from info import DATABASE_URI, DATABASE_NAME
 from Alita import LOGGER
 
 try:
@@ -11,7 +11,7 @@ try:
 except PyMongoError as f:
     LOGGER.error(f"Error in Mongodb: {f}")
     exiter(1)
-alita_main_db = alita_db_client[DB_NAME]
+alita_main_db = alita_db_client[DATABASE_NAME]
 
 
 class MongoDB:
