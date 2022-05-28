@@ -12,9 +12,9 @@ from pyrogram.types import (
 
 from alita import LOGGER, SUPPORT_STAFF
 from alita.bot_class import Alita
-from alita.database.rules_db import Rules
-from alita.database.users_db import Users
-from alita.database.warns_db import Warns, WarnSettings
+from database.rules_db import Rules
+from database.users_db import Users
+from database.warns_db import Warns, WarnSettings
 from alita.tr_engine import tlang
 from alita.utils.caching import ADMIN_CACHE, admin_cache_reload
 from alita.utils.custom_filters import admin_filter, command, restrict_filter
