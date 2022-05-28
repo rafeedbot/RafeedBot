@@ -1,6 +1,6 @@
 from threading import RLock
 
-from alita.database import MongoDB
+from database import MongoDB
 from database.chats_db import Chats
 
 INSERTION_LOCK = RLock()
