@@ -3,7 +3,7 @@ from sys import exit as exiter
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 
-from info import DB_NAME, DB_URI
+from Alita.vars import DB_NAME, DB_URI
 from Alita import LOGGER
 
 try:
