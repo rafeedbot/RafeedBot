@@ -23,8 +23,8 @@ class Config:
     DB_NAME = config("DB_NAME", default="alita_robot")
     NO_LOAD = config("NO_LOAD", default="").split()
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/").split()
-    SUPPORT_GROUP = config("SUPPORT_GROUP", default="DivideProjectsDiscussion")
-    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="DivideProjects")
+    SUPPORT_GROUP = config("SUPPORT_GROUP", default="MS_CHATS")
+    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="MS_OFFICIALS")
     ENABLED_LOCALES = [str(i) for i in config("ENABLED_LOCALES", default="en").split()]
     VERSION = config("VERSION", default="v2.0")
     WORKERS = int(config("WORKERS", default=16))
