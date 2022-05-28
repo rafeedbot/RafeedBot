@@ -7,8 +7,8 @@ from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, Message
 
 from alita import OWNER_ID
 from alita.bot_class import Alita
-from alita.database.antispam_db import GBan
-from alita.database.greetings_db import Greetings
+from database.antispam_db import GBan
+from database.greetings_db import Greetings
 from alita.utils.custom_filters import admin_filter, bot_admin_filter, command
 from alita.utils.msg_types import Types, get_wlcm_type
 from alita.utils.parser import escape_markdown, mention_html
