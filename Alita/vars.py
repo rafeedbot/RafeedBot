@@ -12,14 +12,14 @@ class Config:
 
     LOGGER = True
     BOT_TOKEN = config("BOT_TOKEN", default=None)
-    APP_ID = int(config("APP_ID", default=None))
+    APP_ID = int(config("API_ID", default=None))
     API_HASH = config("API_HASH", default=None)
-    OWNER_ID = int(config("OWNER_ID", default=1198820588))
+    OWNER_ID = int(config("OWNER_ID", default=5253097982))
     MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-100))
     DEV_USERS = [int(i) for i in config("DEV_USERS", default="").split()]
     SUDO_USERS = [int(i) for i in config("SUDO_USERS", default="").split()]
     WHITELIST_USERS = [int(i) for i in config("WHITELIST_USERS", default="").split()]
-    DB_URI = config("DB_URI", default="")
+    DB_URI = config("DATABASE_URI", default="")
     DB_NAME = config("DB_NAME", default="alita_robot")
     NO_LOAD = config("NO_LOAD", default="").split()
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/").split()
