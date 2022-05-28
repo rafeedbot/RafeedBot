@@ -4,7 +4,7 @@ from pyrogram.types import CallbackQuery, Message
 
 from alita import LOGGER, SUPPORT_GROUP
 from alita.bot_class import Alita
-from alita.database.approve_db import Approve
+from database.approve_db import Approve
 from alita.utils.custom_filters import admin_filter, command, owner_filter
 from alita.utils.extract_user import extract_user
 from alita.utils.kbhelpers import ikb
