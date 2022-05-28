@@ -4,12 +4,12 @@ from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import CallbackQuery, Message
 
-from alita import LOGGER, SUPPORT_STAFF
-from alita.bot_class import Alita
+from Alita import LOGGER, SUPPORT_STAFF
+from Alita.bot_class import Alita
 from database.reporting_db import Reporting
-from alita.utils.custom_filters import admin_filter, command
-from alita.utils.kbhelpers import ikb
-from alita.utils.parser import mention_html
+from Alita.utils.custom_filters import admin_filter, command
+from Alita.utils.kbhelpers import ikb
+from Alita.utils.parser import mention_html
 
 
 @Alita.on_message(
