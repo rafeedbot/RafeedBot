@@ -18,18 +18,18 @@ from Alita import DEV_USERS, LOGGER, OWNER_ID, SUPPORT_GROUP, SUPPORT_STAFF
 from alita.bot_class import Alita
 from database.approve_db import Approve
 from database.reporting_db import Reporting
-from alita.tr_engine import tlang
-from alita.utils.caching import ADMIN_CACHE, TEMP_ADMIN_CACHE_BLOCK, admin_cache_reload
-from alita.utils.custom_filters import (
+from Alita.tr_engine import tlang
+from Alita.utils.caching import ADMIN_CACHE, TEMP_ADMIN_CACHE_BLOCK, admin_cache_reload
+from Alita.utils.custom_filters import (
     DEV_LEVEL,
     admin_filter,
     command,
     owner_filter,
     promote_filter,
 )
-from alita.utils.extract_user import extract_user
-from alita.utils.parser import mention_html
-from alita.vars import Config
+from Alita.utils.extract_user import extract_user
+from Alita.utils.parser import mention_html
+from Alita.vars import Config
 
 
 @Alita.on_message(command("adminlist"))
