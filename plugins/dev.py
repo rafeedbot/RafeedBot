@@ -18,7 +18,7 @@ from speedtest import Speedtest
 
 from alita import LOGFILE, LOGGER, MESSAGE_DUMP, UPTIME
 from alita.bot_class import Alita
-from alita.database.chats_db import Chats
+from database.chats_db import Chats
 from alita.tr_engine import tlang
 from alita.utils.clean_file import remove_markdown_and_html
 from alita.utils.custom_filters import command
