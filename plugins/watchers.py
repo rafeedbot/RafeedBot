@@ -6,18 +6,18 @@ from pyrogram import filters
 from pyrogram.errors import ChatAdminRequired, RPCError, UserAdminInvalid
 from pyrogram.types import ChatPermissions, Message
 
-from alita import LOGGER, MESSAGE_DUMP, SUPPORT_STAFF
-from alita.bot_class import Alita
-from alita.database.antispam_db import ANTISPAM_BANNED, GBan
-from alita.database.approve_db import Approve
-from alita.database.blacklist_db import Blacklist
-from alita.database.group_blacklist import BLACKLIST_CHATS
-from alita.database.pins_db import Pins
-from alita.database.warns_db import Warns, WarnSettings
-from alita.tr_engine import tlang
-from alita.utils.caching import ADMIN_CACHE, admin_cache_reload
-from alita.utils.parser import mention_html
-from alita.utils.regex_utils import regex_searcher
+from Alita import LOGGER, MESSAGE_DUMP, SUPPORT_STAFF
+from Alita.bot_class import Alita
+from database.antispam_db import ANTISPAM_BANNED, GBan
+from database.approve_db import Approve
+from database.blacklist_db import Blacklist
+from database.group_blacklist import BLACKLIST_CHATS
+from database.pins_db import Pins
+from database.warns_db import Warns, WarnSettings
+from Alita.tr_engine import tlang
+from Alita.utils.caching import ADMIN_CACHE, admin_cache_reload
+from Alita.utils.parser import mention_html
+from Alita.utils.regex_utils import regex_searcher
 
 # Initialise
 gban_db = GBan()
