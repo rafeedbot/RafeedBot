@@ -1,7 +1,7 @@
 from threading import RLock
 
 from alita.database import MongoDB
-from alita.database.chats_db import Chats
+from database.chats_db import Chats
 
 INSERTION_LOCK = RLock()
 BLACKLIST_CHATS = []
