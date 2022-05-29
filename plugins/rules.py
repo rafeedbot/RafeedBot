@@ -3,7 +3,7 @@ from pyrogram.types import CallbackQuery, Message
 
 from Alita import LOGGER
 from Alita.bot_class import Alita
-from Alita.database.rules_db import Rules
+from database.rules_db import Rules
 from Alita.tr_engine import tlang
 from Alita.utils.custom_filters import admin_filter, command
 from Alita.utils.kbhelpers import ikb
