@@ -5,7 +5,7 @@ from pyrogram.types.messages_and_media.message import Message
 
 from Alita import LOGGER
 from Alita.bot_class import Alita
-from Alita.database.users_db import Users
+from database.users_db import Users
 
 
 async def extract_user(c: Alita, m: Message) -> Tuple[int, str, str]:
