@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from Alita import LOGGER, MESSAGE_DUMP, SUPPORT_GROUP, SUPPORT_STAFF
 from Alita.bot_class import Alita
 from database.antispam_db import GBan
-from database.users_chats_db import Users
+from database.users_db import Users
 from Alita.tr_engine import tlang
 from Alita.utils.clean_file import remove_markdown_and_html
 from Alita.utils.custom_filters import command
