@@ -1,5 +1,5 @@
-from alita.bot_class import Alita
-from alita.utils.msg_types import Types
+from Alita.bot_class import Alita
+from Alita.utils.msg_types import Types
 
 
 async def send_cmd(client: Alita, msgtype: int):
