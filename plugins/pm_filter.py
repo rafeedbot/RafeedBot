@@ -1274,6 +1274,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
       )
+    elif query.data = "dupe":
+        await query.answer("""⚠︎ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ⚠︎ 
+
+ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ɢᴇᴛ ʀᴇsᴜʟᴛ ғᴏʀ ᴍᴏᴠɪᴇ/sɪʀɪᴇs ᴄʟɪᴄᴋ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ.
+
+©ROCKY©""", show_alert=True)
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
@@ -1390,7 +1396,10 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=" 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text=f"🎀 {search} 🎀", url=f"https://www.imdb.com/find?q={search}")]
+            [InlineKeyboardButton(text=f"🎀 {search} 🎀", url=f"https://www.imdb.com/find?q={search}")
+             ],[
+             InlineKeyboardButton(text=f"ғɪʟᴇs: {len(files)} ", url="dupe"),
+             InlineKeyboardButton('text="ᴛɪᴩ, callback_data="dupe")
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
