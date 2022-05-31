@@ -1387,6 +1387,18 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text=f" 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ☞︎︎︎", callback_data=f"next_{req}_{key}_{offset}")]
+        )
+        btn.insert(0, 
+          [
+           InlineKeyboardButton(f'♨️ {search} ♨️ ', 'dupe')
+          ]
+        )
+        btn.insert(1,
+          [ 
+               InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'dupe'),
+               InlineKeyboardButton(f'sᴇʀɪᴇs', 'dupe'),
+               InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
+          ]
         )        
     else:
         btn.append(
