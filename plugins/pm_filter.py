@@ -1389,7 +1389,10 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ☞︎︎︎", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text=f"🎀 {search} 🎀", url=f"https://www.imdb.com/find?q={search}")]
+            [InlineKeyboardButton(text=f"🎀 {search} 🎀", url=f"https://www.imdb.com/find?q={search}")
+             ],[
+             InlineKeyboardButton(text=f"ғɪʟᴇs: {len(files)} ", url="dupee"),
+             InlineKeyboardButton(text="ᴛɪᴩ, callback_data="dupe")]
         )
     else:
         btn.append(
@@ -1399,7 +1402,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"🎀 {search} 🎀", url=f"https://www.imdb.com/find?q={search}")
              ],[
              InlineKeyboardButton(text=f"ғɪʟᴇs: {len(files)} ", url="dupe"),
-             InlineKeyboardButton('text="ᴛɪᴩ, callback_data="dupe")
+             InlineKeyboardButton(text="ᴛɪᴩ, callback_data="dupe")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
