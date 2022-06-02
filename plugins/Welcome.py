@@ -1,6 +1,5 @@
 from pyrogram import filters, Client as Rocky
 from pyrogram.types import Message
-from plugins.Welcome import WELCOME_MSG
 
 
 @Rocky.on_message(filters.command("setwelcome"))
