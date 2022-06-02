@@ -14,7 +14,7 @@ async def welcome_txt(bot, message):
     id = message.from_user.id
     name = message.from_user.first_name
     username = message.from_user.username
-    title = message.from_chat.title
+    title = message.chat.title
     await message.reply_text(
         text=f"YOURE WELCOME MESSAGE IS : {WELCOME_MSG}"
     )
