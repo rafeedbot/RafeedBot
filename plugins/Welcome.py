@@ -1,15 +1,17 @@
 from pyrogram import filters, Client as Rocky
 from pyrogram.types import Message
-from plugins.Welcome.welcome_txt import WELCOME_MSG
+from plugins.Welcome import WELCOME_MSG
+import os
 
 @Rocky.on_message(filters.new_chat_members & filters.group)
 async def welcome_msg(bot, message):
     await message.reply_text(
-        text=f"{WELCOME_MSG}"
+        text=WELCOME_MSG
     )
 
 @Rocky.on_message(filters.command("setwelcome"))
 async def welcome_txt(bot, message):
+WELCOME_MSG = os.environ.get(WELCOME_MSG)
     WELCOME_MSG = message.reply_to_message.text
     mention = message.from_user.mention
     id = message.from_user.id
