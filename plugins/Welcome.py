@@ -16,7 +16,7 @@ async def welcome_txt(bot, message):
     await message.reply_text(
         text=f"YOURE WELCOME MESSAGE IS : {WELCOME_MSG}"
     )
-    if new
+  if new
     await message.reply_text(
         text=f"{WELCOME_MSG}"
     )
