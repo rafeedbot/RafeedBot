@@ -1,5 +1,6 @@
 from pyrogram import filters, Client as Rocky
 from pyrogram.types import Message
+from plugins.welcome.welcome_txt import WELCOME_MSG
 
 @Rocky.on_message(filters.new_chat_members & filters.group)
 async def welcome_msg(bot, message):
