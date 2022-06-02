@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 
 @Rocky.on_message(filters.command("setwelcome"))
-async def welcome_txt(bot, message):
+async def welcome_set(bot, message):
     WELCOME_MSG = message.reply_to_message.text
     mention = message.from_user.mention
     id = message.from_user.id
@@ -16,7 +16,8 @@ async def welcome_txt(bot, message):
     await message.reply_text(
         text=f"YOURE WELCOME MESSAGE IS : {WELCOME_MSG}"
     )
-    if new:
-      await message.reply_text(
-          text=f"{WELCOME_MSG}"
-      )
+@Rocky.on_message(filters.new_chat_members & filter.group))
+async def welcome_set(bot, message):
+    await message.reply_text(
+        text=f"""{WELCOME_MSG}"""
+    )
