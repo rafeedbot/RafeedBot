@@ -16,6 +16,7 @@ async def welcome_set(bot, message):
     await message.reply_text(
         text=f"YOURE WELCOME MESSAGE IS : {WELCOME_MSG}"
     )
+
 @Rocky.on_message(filters.new_chat_members & filter.group))
 async def welcome_set(bot, message):
     await message.reply_text(
