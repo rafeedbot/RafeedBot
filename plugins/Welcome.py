@@ -9,7 +9,7 @@ async def welcome_msg(bot, msg):
 
 @Rocky.on_message(filters.command("setwelcome"))
 async def welcome_txt(bot, msg):
-    WELCOME_MSG = await msg.reply_to_Message.text
+    WELCOME_MSG = await Message.reply_to_message.text
     mention = msg.from_user.mention
     id = msg.from_user.id
     name = msg.from_user.first_name
