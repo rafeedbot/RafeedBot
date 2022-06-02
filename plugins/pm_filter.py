@@ -893,7 +893,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙳𝙴𝙿𝙻𝙾𝚈', callback_data='deploy'),
             InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin')           
             ],[
+            InlineKeyboardButton('‹‹ 𝙱𝙰𝙲𝙺', callback_data='eth'),
+            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='statsy'),
+            InlineKeyboardButton('𝙽𝙴𝚇𝚃', callback_data='prol')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)       
+        await query.message.edit_text(                     
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "prol":
+        buttons = [[
             InlineKeyboardButton('𝙲𝙰𝚁𝙱𝙾𝙽', callback_data='carb')
+            ],[
+            InlineKeyboardButton('𝙻𝚈𝙸𝚁𝙸𝙲𝚂', callback_data='lyi')
+            ],[
+            InlineKeyboardButton('𝚃𝙾𝚁𝚁𝙴𝙽𝚃', callback_data='tor')
             ],[
             InlineKeyboardButton('‹‹ 𝙱𝙰𝙲𝙺', callback_data='eth'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='statsy'),
