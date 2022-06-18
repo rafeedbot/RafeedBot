@@ -1,4 +1,4 @@
-from database.chats_users_mdb import db
+from database.users_chats_db import db
 
 SETTINGS = {}
 
