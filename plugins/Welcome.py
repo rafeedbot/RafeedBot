@@ -1,6 +1,6 @@
 import asyncio
 from pyrogram import Client as Rocky, filters
-from plugins.functions import get_settings
+from database.functions import get_settings
 from pyrogram.errors import ChatWriteForbidden
 
 @Rocky.on_message(filters.group & filters.new_chat_members)
