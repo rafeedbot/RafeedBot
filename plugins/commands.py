@@ -448,11 +448,11 @@ async def settings(client, message):
             [
                 InlineKeyboardButton(
                     '𝐖𝐄𝐋𝐂𝐎𝐌𝐄',
-                    callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
+                    callback_data=f'settings#welcome#{settings["welcome"]}#{str(grp_id)}',
                 ),
                 InlineKeyboardButton(
                     '✅ 𝐘𝐄𝐒' if settings["welcome"] else '🗑️ 𝐍𝐎',
-                    callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
+                    callback_data=f'settings#welcome#{settings["welcome"]}#{str(grp_id)}',
                 ),
             ],
         ]
