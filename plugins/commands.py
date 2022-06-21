@@ -447,7 +447,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    '𝐖𝐄𝐋𝐂𝐎𝐌𝐄',
+                    '𝚂𝙴𝚃 𝚆𝙴𝙻𝙲𝙾𝙼𝙴',
                     callback_data=f'settings#welcome#{settings["welcome"]}#{str(grp_id)}',
                 ),
                 InlineKeyboardButton(
