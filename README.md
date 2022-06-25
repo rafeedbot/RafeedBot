@@ -13,7 +13,7 @@
 [![Forks](https://img.shields.io/github/forks/Zinan100/Rocky?style=flat-square&color=blue)](https://github.com/Zinan100/Rocky/fork)
 [![Size](https://img.shields.io/github/repo-size/Zinan100/Rocky?style=flat-square&color=red)](https://github.com/Zinan100/Rocky)   
 [![Open Source happy ](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Zinan100/Rocky)   
-[![Contributors](https://img.shields.io/github/contributors/Aadhi000/Ajax-Extra-Features?style=flat-square&color=green)](https://github.com/Zinan100/Rocky/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/Zinan100/Rocky?style=flat-square&color=green)](https://github.com/Zinan100/Rocky/graphs/contributors)
 ## Features
 
 - [x] Auto Filter
@@ -37,6 +37,9 @@
 - [x] COVID Information
 - [x] File Store
 - [X] Image Editor
+- [X] lyirics
+- [X] carbon
+- [X] torrent
 
 ## Variables
 
@@ -49,7 +52,7 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this 
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `SUPPORT_CHAT` : @MWUpdatez
+* `SUPPORT_CHAT` : @mr_BOTS_tg
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
 ### Optional Variables
 
@@ -60,7 +63,7 @@ You can deploy this bot anywhere.
 <summary>Deploy To Heroku</summary>
 <br>
 <p>
-<a href="https://heroku.com/deploy?template=https://github.com/Zinan100/Alex">
+<a href="https://heroku.com/deploy?template=https://github.com/Zinan100/Rocky">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
@@ -72,7 +75,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Aadhi000/Ajax-Extra-Features
+git clone https://github.com/Zinan100/Rocky
 # Install Packages
 pip3 install -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -111,5 +114,5 @@ python3 bot.py
 * /broadcast - to broadcast a message to all Ajax users
 ```
 
-<b>✮ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝐀𝐚𝐝𝐡𝐢](https://t.me/Aadhi011)</b>                                                                                                                                                                                     
-<b>✮ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐳](https://t.me/MWUpdatez)</b>
+<b>✮ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝚉𝙸𝙽𝙰𝙽](https://github.com/Zinan100)</b>                                                                                                                                                                                     
+<b>✮ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝙼𝚁. 𝙱𝙾𝚃𝚂](https://t.me/mr_BOTS_tg)</b>
