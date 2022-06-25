@@ -1,9 +1,13 @@
-<p align="center">
-  <img src="https://telegra.ph/file/c1fb90602a7a67a791570.jpg" alt="Ajax-Extra-FeaturesLogo">
-</p>
 <h1 align="center">
   <b>𝐑𝐎𝐂𝐊𝐘</b>
 </h1>
+
+
+
+<p align="center">
+  <img src="https://telegra.ph/file/c1fb90602a7a67a791570.jpg" alt="Ajax-Extra-FeaturesLogo">
+</p>
+
 
 <a href="https://youtube.com/channel/UCVbKgUOGVEdQlmLJ_fXrWMQ">
   <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-black?logo=youtube" width="150">
