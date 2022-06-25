@@ -68,10 +68,15 @@
 
 # Deploy
 
-##DEPLOY TO HEROKU
 
+<details><summary>Deploy To HEROKU</summary>
+<p>
+<pre>
 Direct Deploy is not possible go to <a href="https://github.com/Zinan100/ROCKY_LOADER">ROCKY Loader</a>.
 When try to deploy directly it will show erors just goto <a href="https://github.com/Zinan100/ROCKY_LOADER">ROCKY Loader</a> and click on deploy to heroku write variables done.
+</pre>
+</p>
+</details>
 
 
 
