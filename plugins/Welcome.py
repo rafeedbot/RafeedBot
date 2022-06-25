@@ -2,6 +2,8 @@ import asyncio
 from pyrogram import Client as Rocky, filters
 from database.functions import get_settings
 from pyrogram.errors import ChatWriteForbidden
+from plugins.setwel import welcome
+
 
 @Rocky.on_message(filters.group & filters.new_chat_members)
 async def welcome(client, update):
@@ -20,3 +22,4 @@ async def welcome(client, update):
                 pass
         except Exception as error:       
             await update.reply_text(f"{error}")
+            await welcome.reply_text(f"{welcome}")
