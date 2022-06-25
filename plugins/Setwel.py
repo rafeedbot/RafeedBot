@@ -9,7 +9,7 @@ async def welcome(bot: Messages, chat_id=id)
         await bot reply_text(
             text="nothing provided for welcome"
         )
-    else:
+     else:
         welcome = message.reply_to_message.text
         await bot.reply_text(
             text=f"youre welcome message saved {title} is {welcome}"
