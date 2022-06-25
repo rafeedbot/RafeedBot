@@ -48,6 +48,7 @@
 ## Variables
 
 ### Required Variables
+
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 * `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
@@ -58,23 +59,21 @@
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 * `SUPPORT_CHAT` : @mr_BOTS_tg
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
+
 ### Optional Variables
 
-## Deploy
-You can deploy this bot anywhere.
+* 'UPSTREAM_REPO' : youre cloned repo link
+* 'RemoveBG_API' : youre api from https://www.remove.bg/b/background-removal-api
 
 
-<summary>Deploy To Heroku</summary>
-<br>
-<p>
-<a href="https://heroku.com/deploy?template=https://github.com/Zinan100/Rocky">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-</p>
+# Deploy
 
-<a href="https://youtu.be/kB9TkCs8cX0">
-  <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
-</a><br>
+##DEPLOY TO HEROKU
+
+Direct Deploy is not possible go to <a href="https://github.com/Zinan100/ROCKY_LOADER">ROCKY Loader</a>.
+When try to deploy directly it will show erors just goto <a href="https://github.com/Zinan100/ROCKY_LOADER">ROCKY Loader</a> and click on deploy to heroku write variables done.
+
+
 
 <details><summary>Deploy To VPS</summary>
 <p>
