@@ -10,7 +10,8 @@ async def welcome(bot: Messages, chat_id=id)
             text="nothing provided for welcome"
         )
      else:
-        welcome = message.reply_to_message.text
-        await bot.reply_text(
-            text=f"youre welcome message saved {title} is {welcome}"
-        )
+         welcome = message.reply_to_message.text
+         await id.save()
+         await bot.reply_text(
+             text=f"youre welcome message saved {title} is {welcome}"
+         )
