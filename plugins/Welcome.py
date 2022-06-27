@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import Client as Rocky, filters
 from database.functions import get_settings
 from pyrogram.errors import ChatWriteForbidden
-from plugins.setwel import welcome
+from plugins.setwel import welcome_msg
 
 
 @Rocky.on_message(filters.group & filters.new_chat_members)
