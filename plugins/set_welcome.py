@@ -1,5 +1,6 @@
+import pyrogram
 from pyrogram import Client as Mr_bots, filters
-from config import ADMINS
+from info import ADMINS
 
 
 @Mr_bots.on_message((filters.private | filters.group) & filters.command('setwelcome'), group=8)
