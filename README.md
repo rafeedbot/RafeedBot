@@ -62,8 +62,8 @@
 
 ### Optional Variables
 
-* 'UPSTREAM_REPO' : youre cloned repo link
-* 'RemoveBG_API' : youre api from https://www.remove.bg/b/background-removal-api
+* `UPSTREAM_REPO` : youre cloned repo link
+* `RemoveBG_API` : youre api from https://www.remove.bg/b/background-removal-api
 
 
 # Deploy
