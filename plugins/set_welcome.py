@@ -1,4 +1,5 @@
 import enums
+from enums import ChatType
 import asyncio
 import pyrogram
 from pyrogram import Client as Mr_bots, filters
