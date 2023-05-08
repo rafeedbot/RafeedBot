@@ -799,14 +799,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
             InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
 
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://youtube.com/@MovieClubYt')
+            InlineKeyboardButton('yᴏᴜᴛᴜʙᴇ', url='https://youtube.com/@MovieClubYt')
 
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)
         R1 = await query.message.reply_text("⍟⍟⍟")
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.3)
         R2 = await R1.edit("✪⍟⍟")
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.4)
         R3 = await R2.edit("✪✪⍟")
         await asyncio.sleep(0.5)
         R4 = await R3.edit("✪✪✪")
