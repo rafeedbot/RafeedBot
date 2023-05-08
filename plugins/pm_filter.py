@@ -793,7 +793,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
 
-            ][
+            ],[
 
             InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
 
