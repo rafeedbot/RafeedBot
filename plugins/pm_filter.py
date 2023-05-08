@@ -779,13 +779,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons =  [[
 
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ'ʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
 
             ],[
 
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MS_OFFICIALS'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movieclub5588'),
 
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/MS_CHATS')
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Rafeed_T')
 
             ],[      
 
