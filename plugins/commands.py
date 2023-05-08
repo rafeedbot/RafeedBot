@@ -46,7 +46,7 @@ async def start(client, message):
             ],[      
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-            ][
+            ],[
             InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
             InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
             InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://youtube.com/@MovieClubYt')
@@ -91,7 +91,7 @@ async def start(client, message):
             ],[      
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-            ][
+            ],[
             InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
             InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
             InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://youtube.com/@MovieClubYt')
