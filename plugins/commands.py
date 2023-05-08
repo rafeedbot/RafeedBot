@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃', url=f"https://t.me/Aadhi011")
+                InlineKeyboardButton('𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃', url=f"https://t.me/Zinan100pbot")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -39,13 +39,17 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ'ʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MS_OFFICIALS'),
-            InlineKeyboardButton('💠 GROᑌᑭ 💠', url='https://t.me/MS_CHATS')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MS_OFFICIALS'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/MS_CHATS')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            ][
+            InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
+            InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://t.me/MS_CHATS'), 
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/MS_CHATS')
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
