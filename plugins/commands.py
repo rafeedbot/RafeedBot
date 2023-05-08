@@ -39,10 +39,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ'ʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ yᴏᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MS_OFFICIALS'),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/MS_CHATS')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movieclub5588'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Rafeed_T')
             ],[      
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -84,10 +84,10 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =  [[
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ'ʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MS_OFFICIALS'),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/MS_CHATS')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movieclub5588'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Rafeed_T')
             ],[      
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
