@@ -528,7 +528,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
                 buttons = [[
-                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/mknmovies')
+                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/movieclub5588')
                   ]]
             except Exception as e:
                 logger.exception(e)
@@ -777,15 +777,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons =  [[
+
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ'ʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MS_OFFICIALS'),
-            InlineKeyboardButton('💠 GROᑌᑭ 💠', url='https://t.me/MS_CHATS')
+
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/MS_OFFICIALS'),
+
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/MS_CHATS')
+
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-        ]]
+
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+
+            ][
+
+            InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
+
+            InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
+
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://youtube.com/@MovieClubYt')
+
+        ]]     
         reply_markup = InlineKeyboardMarkup(buttons)
         R1 = await query.message.reply_text("⍟⍟⍟")
         await asyncio.sleep(0.5)
@@ -900,7 +916,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('‹‹ 𝙱𝙰𝙲𝙺', callback_data='eth'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='statsy'),
-            InlineKeyboardButton('𝙽𝙴𝚇𝚃', callback_data='prol')
+            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)       
         await query.message.edit_text(                     
@@ -908,24 +924,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "prol":
-        buttons = [[
-            InlineKeyboardButton('𝙲𝙰𝚁𝙱𝙾𝙽', callback_data='carb')
-            ],[
-            InlineKeyboardButton('𝙻𝚈𝙸𝚁𝙸𝙲𝚂', callback_data='lyi')
-            ],[
-            InlineKeyboardButton('𝚃𝙾𝚁𝚁𝙴𝙽𝚃', callback_data='tor')
-            ],[
-            InlineKeyboardButton('‹‹ 𝙱𝙰𝙲𝙺', callback_data='eth'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='statsy'),
-            InlineKeyboardButton('𝙷𝙾𝙼𝙴', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)       
-        await query.message.edit_text(                     
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+
     elif query.data == "lyi":
         buttons= [[
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='prol')
@@ -948,7 +947,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://github.com/Aadhi000/Ajax')
+            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/Zinan100pbot')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
