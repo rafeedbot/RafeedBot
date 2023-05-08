@@ -2,7 +2,7 @@ class script(object):
     START_TXT = """Hᴇʟʟᴏ {},
 Mʏ Nᴀᴍᴇ Is  <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍
 """
-     HELP_TXT = """𝙷𝙴𝚈 {}
+    HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     TOR_TXT = """Help: Torrent Search
 
