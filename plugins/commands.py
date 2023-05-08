@@ -49,7 +49,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
             InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://youtube.com/@MovieClubYt')
+            InlineKeyboardButton('yᴏᴜᴛᴜʙᴇ', url='https://youtube.com/@MovieClubYt')
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -94,7 +94,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
             InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://youtube.com/@MovieClubYt')
+            InlineKeyboardButton('yᴏᴜᴛᴜʙᴇ', url='https://youtube.com/@MovieClubYt')
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
