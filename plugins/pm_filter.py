@@ -1500,7 +1500,7 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(1500)
             await hehe.delete()
 
-           msg = await message.reply_photo(
+            msg = await message.reply_photo(
 
                 photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
 
