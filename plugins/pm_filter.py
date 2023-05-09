@@ -500,7 +500,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 )
                 await query.answer('Check Out The Chat',show_alert=False)
-                await asyncio.sleep(300)
+                await asyncio.sleep(600)
                 await msg1.delete()
                 await msg.delete()
                 del msg1, msg
@@ -1497,22 +1497,32 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(300)
+            await asyncio.sleep(1500)
             await hehe.delete()
-            await message.reply_photo(
+
+           msg = await message.reply_photo(
+
                 photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
+
+                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ ꜱᴇᴀʀᴄʜ Cʟᴏꜱᴇᴅ 🗑️"
+
             )
+            await asyncio.sleep(60)
+            await msg.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1500)
             await hmm.delete()
-            await message.reply_photo(
+            msg2 = await message.reply_photo(
                 photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
             )
+            await asyncio.sleep(60)
+
+            await msg2.delete()
+            as
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
@@ -1526,10 +1536,12 @@ async def auto_filter(client, msg, spoll=False):
         fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(300)
         await fuk.delete()
-        await message.reply_photo(
+        msg3 = await message.reply_photo(
             photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
             caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
         )
+        await asyncio.sleep(60)
+        await msg3.delete()
 
 async def advantage_spell_chok(msg):
     query = re.sub(
