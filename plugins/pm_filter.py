@@ -1499,13 +1499,9 @@ async def auto_filter(client, msg, spoll=False):
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1500)
             await hehe.delete()
-
-           msg = await message.reply_photo(
-
+            msg = await message.reply_photo(
                 photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
-
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ ꜱᴇᴀʀᴄʜ Cʟᴏꜱᴇᴅ 🗑️"
-
             )
             await asyncio.sleep(60)
             await msg.delete()
@@ -1520,7 +1516,6 @@ async def auto_filter(client, msg, spoll=False):
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
             )
             await asyncio.sleep(60)
-
             await msg2.delete()
             as
         except Exception as e:
