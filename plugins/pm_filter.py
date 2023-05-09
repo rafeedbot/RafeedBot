@@ -504,12 +504,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await msg1.delete()
                 await msg.delete()
                 del msg1, msg
+
+            except UserIsBlocked:
+                await query.answer('Unblock the bot mahn !',show_alert = True)
+            except PeerIdInvalid:
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
             except Exception as e:
-                logger.exception(e, exc_info=True)
-                await query.answer(f"Encountering Issues", True)
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+                print(f"{e}")
         else:
-            return await query.answer(f"⚠️ 𝙃𝙚𝙮, {query.from_user.first_name}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣. ഇത് നിങ്ങൾ search ചെയ്തതല്ല നിങ്ങൾക് വേണ്ടത് നിങ്ങൾ search ചെയ്യൂ 🙏.", show_alert=True)
-           
+            await query.answer(f"⚠️ 𝙃𝙚𝙮, {query.from_user.first_name}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣", show_alert=True)
+
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
             await query.answer(f"Hey, {query.from_user.first_name}! I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
@@ -1496,47 +1501,19 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b><i>📀 Title :  : {search}\n🗣️Requested By : {message.from_user.mention}\n🦋Group🦋: {message.chat.title}</i></b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1500)
-            await hehe.delete()
-            msg = await message.reply_photo(
-                photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ ꜱᴇᴀʀᴄʜ Cʟᴏꜱᴇᴅ 🗑️"
-            )
-            await asyncio.sleep(60)
-            await msg.delete()
+            await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+                                      reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1500)
-            await hmm.delete()
-            msg2 = await message.reply_photo(
-                photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
-            )
-            await asyncio.sleep(60)
-            await msg2.delete()
-            as
+            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(300)
-            await fek.delete()
-            await message.reply_photo(
-                photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
-            )
+            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(300)
-        await fuk.delete()
-        msg3 = await message.reply_photo(
-            photo="https://telegra.ph/file/82ba4c0603189feac0ffe.jpg",
-            caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
-        )
-        await asyncio.sleep(60)
-        await msg3.delete()
+        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+    if spoll:
+        await msg.message.delete()
 
 async def advantage_spell_chok(msg):
     query = re.sub(
