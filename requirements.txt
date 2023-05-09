@@ -35,3 +35,4 @@ pypdf2
 PyPDF2
 pyshorteners
 speedtest
+ffmpeg
